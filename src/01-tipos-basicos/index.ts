@@ -18,11 +18,27 @@ const maiorDeIdade: boolean = true; // boolean
 const nome: string = 'Marcos'; // string
 
 const seriesFavoritas: string[] = ['The Office', 'Dark', 'Vikings'];
-const lazeres: Array<string> = ['Jogar', 'Pescar']; // *
+const lazeres: Array<string> = ['Jogar', 'Pescar'];
 
 const naoSeiValor: any = 'Sabe de nada';
-const naoTenhoValor: undefined | string = 'Tem sim'; // *
+const naoTenhoValor: undefined | string = 'Tem sim';
 
 function digaOla(): void {
   console.log('Olá');
+}
+
+
+// Tipagem na função:
+
+function somar(x: number, y: number): number {
+  return x + y;
+}
+
+interface Params {
+  x: number;
+  y: number;
+}
+
+function subtrair({x, y}: Params): number {
+  return x - y;
 }
