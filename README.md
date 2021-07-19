@@ -1,0 +1,1 @@
+# Repositório de exemplos e vantagens do TypeScript
